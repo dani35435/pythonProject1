@@ -7,11 +7,11 @@
 </head>
 <body>
 {% block content %}
-
-{% for item in product %}
-{{item.name}}
-{{item.desc}}
 <p>sadasdads</p>
+{% for item in product %}
+{{item.name}}<br>
+{{item.desc}}<br>
+<img src="{{ item.photo }}" alt=""><br>
 {% endfor %}
 {% endblock %}
 </body>

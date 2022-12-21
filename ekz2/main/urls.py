@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, about, contacts, profile, LoginView, LogoutView
+from .views import index, about, contacts, profile, LoginView, LogoutView, product
 
 app_name = 'main'
 
@@ -10,4 +10,5 @@ urlpatterns = [
     path('accounts/profile/', profile, name='profile'),
     path('login/', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
+    path('product/', product, name='product'),
 ]
